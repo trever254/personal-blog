@@ -22,6 +22,12 @@ Created by Trever Akumu
 * Heroku
 * Bootstrap
 
+## Installations
+- To intall flask,flask-Bootsrap and flask-script run the following commands
+* $ python3.6 -m pip install Flask    
+* $ python3.6 -m pip install Flask-Bootstrap
+* $ python3.6 -m pip install Flask-Script
+
 ## Licensing
 * The application is licensed under MIT licence
 
