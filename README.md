@@ -14,3 +14,15 @@ Created by Trever Akumu
 * As a writer, I would also like to create a blog from the application.
 * As a writer, I would like to delete comments that I find insulting or degrading.
 * As a writer, I would like to update or delete blogs I have created.
+
+## Technologies used
+* Python3.6
+* Flask framework
+* CSS
+* Heroku
+* Bootstrap
+
+## Licensing
+* The application is licensed under MIT licence
+
+     copyright © Trever Akumu 2020
