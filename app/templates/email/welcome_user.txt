@@ -1,0 +1,4 @@
+Hi {{user.username}},
+Welcome to Blogs;
+We have just seen you have signed up for our application.
+You can now create your blog,post on your blog and also comment on your blog.
