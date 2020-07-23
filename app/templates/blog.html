@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import 'macros.html' as macro%}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12-offset-1 col-sm-12">
+            <h3 class="text-centre">{{blog.name|upper}}</h3>
+        </div>
+    </div>        
+        <hr>
+    <div class="row">
+        <a class="btn btn-warning" style="float: left;margin-bottom: 20px;;" href="{{url_for('main.new_post',id=blog.id)}}"> posts</a>
+    </div>  
+
+    {% if posts %}
+    <div>
+        {{ macro.displayPosts(posts)}}
+    </div>
+    {% else %}
+    <div class="well">
+        <h5>No posts in this blog</h5>
+    </div> 
+    {% endif %}   
+
+</div>
+{% endblock %}
