@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+<!-- Content Block -->
+<div class="container">
+    <div class="row">
+        <div class="col-10">
+            <h2>{{blog.name|upper}}</h2>
+            <a class="btn btn-success" href="/blog/view_post/{{post.blog.id}}">Post</a>
+            <hr>
+        </div>
+    </div>    
+        {% if posts %}
+        <div class="card">
+            <div class="well">
+                {{ macro.displayPosts(posts)}}
+            </div>
+          </div>
+ 
+            <div class="col-4">
+                <p class="post">{{ post.comment }}</p>
+            </div>
+        </div>
+        {%else%}
+        <div class="well">
+          <h4 style="padding:10%; text-align:center; font-size:50px">No existing post in this blog. </h4>
+        </div>
+  {% endif %}
+</div>
+
+{% endblock %}
