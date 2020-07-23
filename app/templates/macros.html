@@ -1,0 +1,23 @@
+{% macro displayBlogList(blog_list) %}
+    {% for blog in blog_list%}
+        <div>
+          <a href="{{url_for('main.blog',id=blog.id)}}"><p>{{blog.name|upper}}</p></a>
+        </div>
+
+    {% endfor %}
+{% endmacro %}
+
+{% macro displayPosts(post_list) %}
+  {% for posts in post_list %}
+    <div class="row">
+          <div class="col-12">
+            <p>{{posts.name|upper}}</p></a>
+          </div>
+    </div>    
+    <div class="row">  
+        <div class="col-md-10 col-sm-12">
+            <h3>{{posts.content}}</h3>
+        </div>
+    </div>    
+  {% endfor %}
+{% endmacro %}
