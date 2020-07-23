@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+<div class="card">
+        <div class="card-header">
+            <h3>{{blog.name|upper}} Post</h3>
+        </div>
+        <div class="well">
+            {{wtf.quick_form(post_form)}}
+        </div>
+</div>
+
+<!-- <div class="container col-md-6" style="text-align:center">
+     <h3>{{blog.name|upper}} Post</h3>
+    <div class="well">
+        <hr>
+        {{wtf.quick_form(post_form)}}
+    </div>
+</div> -->
+
+{% endblock %}Yes everything conna be okayYes everything conna be okayYes everything conna be okay
