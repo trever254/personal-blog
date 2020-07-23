@@ -26,7 +26,7 @@ class ProdConfig(Config):
     DEBUG = True
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = ''
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/blogs'
     pass
 
 config_options = {
